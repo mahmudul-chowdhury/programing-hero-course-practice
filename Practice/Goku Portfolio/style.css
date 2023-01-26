@@ -5,10 +5,13 @@ body{
 h1{
     font-size: 50px;
 }
+h2{
+    font-size: 30px;
+}
 .goku2nd{
     color: orange;
 }
-section{
+.flexible-container{
     display: flex;
     margin-bottom: 100px;
 }
@@ -42,4 +45,27 @@ p{
     background-image: url(img/my-family.png);
     background-repeat: no-repeat;
     background-position: right;
+}
+.three-saiyan{
+    background-image: url(/img/exp-bg.png);
+    background-repeat: no-repeat;
+}
+.saiyan{
+    box-shadow: 10px 10px 40px gray;
+    width: 50%;
+    margin-left: 3%;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.saiyan img{
+    width: 100%;
+}
+#left-border-blue{
+    border-left: 7px solid darkorange;
+}
+#left-border-darkorange{
+    border-left: 7px solid rgba(11, 11, 238, 0.74);
+}
+#left-border-aqua{
+    border-left: 7px solid gray;
 }
