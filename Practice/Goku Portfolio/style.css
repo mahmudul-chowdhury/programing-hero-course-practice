@@ -10,10 +10,12 @@ h1{
 }
 section{
     display: flex;
+    margin-bottom: 100px;
 }
 .first-half-weidth{
     width: 50%;
     padding-left: 5%;
+    padding-right: 2%;
 }
 .first-half-weidth img{
     width: 60%;
@@ -34,4 +36,10 @@ p{
     background-image: url(img/top-banner.png);
     background-repeat: no-repeat;
 
+
+}
+.my-family{
+    background-image: url(img/my-family.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
