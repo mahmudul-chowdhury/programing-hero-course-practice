@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Pseudo</title>
+
+    <style>
+        h1{
+            color: #1d69f7;
+        }
+        /* Eikhane ekta Ui er bitor 6ta Li thakbe.*/
+        h1:hover{
+            color: #0206fd;
+            font-weight: 900;
+        }
+        .sec-inp:focus{
+            color: blue;
+            font-weight: 800;
+        }
+        a:visited{
+            color: red;
+        }
+
+        li:first-child{
+            text-shadow: 2px 2px;
+            font-weight: 600;
+        }
+        li:last-child{
+            color: #ff4b04;
+        }
+        li:nth-child(2n){
+            background-color: #a9c4f7;
+        }
+        h3::before{
+            content: 'hello ';
+            background-color: bisque;
+        }
+        .special::after{
+            content: 'gello';
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is normal</h1>
+    <input type="text">
+    <input class="sec-inp" type="text">
+    <input type="text">
+    <br><br>
+    <a href="https://www.youtube.com/">YouTube</a>
+    <a href="https://outlook.office.com/">Outlook</a>
+    <a href="https://www.marvel.com/">Marvel</a> 
+    
+    <br> <br>
+
+    <ul>
+        <li>Alia</li>
+        <li>Kalia</li>
+        <li>Malia</li>
+        <li>Jolia</li>
+        <li>Bhulblulia</li>
+        <li>MOlia</li>
+        <li>Alia</li>
+        <li>Kalia</li>
+        <li>Malia</li>
+        <li>Jolia</li>
+        <li>Bhulblulia</li>
+        <li>MOlia</li>
+    </ul>   
+    <br><br>
+
+    <h3>This are the h3 tags -1</h3>
+    <h3 class="special">This are the h3 tags -2</h3>
+    <h3>This are the h3 tags -3</h3>
+    <h3 class="special">This are the h3 tags -4</h3>
+    <h3 class="special">This are the h3 tags -5</h3>
+    <h3>This are the h3 tags -6</h3>
+</body>
+</html>
