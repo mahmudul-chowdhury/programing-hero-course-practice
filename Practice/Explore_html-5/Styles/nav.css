@@ -1,0 +1,29 @@
+/*Eikhane > er madhome imediate chile(1st child) ke bujhano hoyeche*/
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 20px; 
+}
+nav li:hover{
+    font-size: 21px;
+    border: 2px solid lightblue;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+nav > ul > li:hover >ul{
+    display: block;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+}
+.dropdown li{
+    padding: 0 20px;
+    margin: 0;
+}
