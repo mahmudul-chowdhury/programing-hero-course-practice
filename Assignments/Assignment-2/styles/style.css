@@ -1,0 +1,287 @@
+/* font family Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------------------
+        header part style
+------------------------------*/
+header{
+    margin: 50px 140px 100px 140px;
+    display: flex;
+    justify-content:space-evenly;
+    /* align-items: center; */
+    background-color: black;
+    border-radius: 30px;
+}
+.header-text{
+    color: white;
+    width: 50%;
+    /* eikhane width 50% dewate header box ta soman 2vag e vag hoyeche */
+}
+.header-text h1{
+    font-weight: 700;
+}
+.watchLive-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.watchLive-button{
+    background-color: #DD0000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* -----------------------------
+        main part style
+----------------------------- */
+
+/* --------blog-container part --------*/
+.blog-container{
+    margin: 0px 140px 100px 140px;
+    display: flex;
+}
+/* ----button design start---- */
+.buttons{
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.buttons button{
+    width: 165px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+.buttons button:hover{
+    font-size: 18px;
+    text-shadow: 0 0 0.125em hsl(0, 1%, 47%), 0 0 0.45em #DD0000;
+
+    border: 2px solid #DD0000;
+    box-shadow: inset 0 0 0.5em 0 var(#DD0000), 0 0 0.5em 0 var(#DD0000) ;
+}
+.buttons button a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.blogs-button{
+    background-color: #DD0000;
+    font-size: 18px;
+    font-weight: 500;
+}
+.blogs-button a{
+    color: white;
+}
+.allGroup-button{
+    margin: 30px 0;
+}
+.allGroup-button a{
+    color: black;
+}
+.upcomingMatch-button a{
+    color: black;
+}
+/* -----button design ends---- */
+
+
+.live-blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.live-blog{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.live-blog img{
+    width: 100%;
+}
+.blog-text{
+    margin: 20px;
+}
+.blog-text button{
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.blog-text p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.icons{
+    display: flex;
+    justify-content: first baseline;
+}
+.time-icon{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.time-icon img{
+    margin-right: 10px;
+}
+.message-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.message-icon img{
+    margin-right: 10px;
+}
+
+
+
+
+/* ----------------Footer part style--------------------- */
+footer{
+    background-color: black;
+    padding: 80px 0;
+    text-align: center;
+}
+footer h2{
+    color: white;
+}
+hr{
+    width: 80%;
+    color: #ffffffc4;
+}
+.footer-terms-policys a{
+    text-decoration: none;
+    color: white;
+
+}
+.footer-socialIcons a i{
+    color: white;
+}
+
+
+
+
+/* -----------------------------Media Query--------------------------------- */
+
+
+/* ------------------------------
+        Mobile view 
+--------------------------------*/
+@media only screen and (max-width: 688px) {
+    body{
+        margin: 0;
+    }
+    header{
+        margin: 40px 20px 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .header-text{
+        margin: 20px 30px;
+        width: 80%;
+        text-align: center;
+    }
+    header img{
+        width: 80%;
+    }
+
+    /*--------- Mobile main part ---------*/
+    .blog-container{
+        margin: 40px 20px 40px 20px;
+        padding: 0 7px;
+        display: flex;
+        flex-direction: column;
+        height: 1350px;
+        overflow-y: scroll;
+    }
+
+    /* Mobile button part */
+    .buttons{
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+    .allGroup-button{
+        margin: 0 0;
+    }
+    /* Mobile blog part */
+    .live-blogs{
+        display: flex;
+        flex-direction: column;
+    }
+    .live-blog{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .footer-terms-policys a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+}
+
+
+/* ------------------------------
+        Tablet view 
+--------------------------------*/
+@media only screen and (min-width: 689px) and (max-width: 992px){
+    header{
+        margin: 50px 50px 70px 50px;
+    }
+    .header-text{
+        margin: 60px 0 60px 60px;
+    }
+    header img{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+ /* ---------Tablet main part---------- */
+    .blog-container{
+        margin: 0px 50px 70px 50px;
+        display: flex;
+        flex-direction: column;
+        height: 1350px;
+        overflow-y: scroll;
+    }
+    /* Tablet button part */
+    .buttons{
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+    .allGroup-button{
+        margin: 0 0;
+    }
+    
+    /* Tablet blog part */
+    .live-blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .live-blog{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+}

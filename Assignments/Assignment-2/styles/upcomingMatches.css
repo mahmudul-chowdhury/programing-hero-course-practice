@@ -1,0 +1,146 @@
+/* font family Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------------------
+        header part style
+------------------------------*/
+header{
+    margin: 50px 140px 100px 140px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: black;
+    border-radius: 30px;
+}
+.header-text{
+    color: white;
+    width: 50%;
+    /* eikhane width 50% dewate header box ta soman 2vag e vag hoyeche */
+}
+.header-text h1{
+    font-weight: 700;
+}
+.watchLive-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.watchLive-button{
+    background-color: #DD0000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* -----------------------------
+        main part style
+----------------------------- */
+
+/* --------blog-container part --------*/
+.match-container{
+    margin: 0 140px 80px 140px;
+    display: flex;
+}
+/* ----button design start---- */
+.buttons{
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.buttons button{
+    width: 165px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+.buttons button:hover{
+    font-size: 18px;
+    text-shadow: 0 0 0.125em hsl(0, 1%, 47%), 0 0 0.45em #DD0000;
+
+    border: 2px solid #DD0000;
+    box-shadow: inset 0 0 0.5em 0 var(#DD0000), 0 0 0.5em 0 var(#DD0000) ;
+}
+.buttons button a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.upcomingMatch-button{
+    background-color: #DD0000;
+    font-size: 18px;
+    font-weight: 500;
+}
+.upcomingMatch-button a{
+    color: white;
+}
+.allGroup-button{
+    margin: 30px 0;
+}
+.allGroup-button a{
+    color: black;
+}
+.blogs-button a{
+    color: black;
+}
+/* -----button design ends---- */
+
+
+.live-matches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.live-match{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.flags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.flags img{
+    width: 40%;
+}
+.flags p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 15px;
+}
+.match-details{
+    text-align: center;
+}
+.match-details-header{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* ----------------Footer part style--------------------- */
+footer{
+    background-color: black;
+    padding: 80px 0;
+    text-align: center;
+}
+footer h2{
+    color: white;
+}
+hr{
+    width: 80%;
+    color: #ffffffc4;
+}
+.footer-terms-policys a{
+    text-decoration: none;
+    color: white;
+
+}
+.footer-socialIcons a i{
+    color: white;
+}
